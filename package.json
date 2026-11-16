@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "devDependencies": {
+        "typescript": "^5.8.3",
+        "vitest": "^3.2.4"
+    },
+    "name": "leetcode-practice-starter",
+    "type": "module",
+    "scripts": {
+        "enrich:problem-md": "node scripts/enrich-problem-md.mjs --all",
+        "pace": "node scripts/pace-report.mjs",
+        "revisit": "node scripts/revisit-report.mjs",
+        "test:watch": "vitest",
+        "test:active": "vitest run active",
+        "test": "vitest run",
+        "test:review": "vitest run review"
+    },
+    "dependencies": {
+        "@datastructures-js/priority-queue": "^6.4.0"
+    }
+}
